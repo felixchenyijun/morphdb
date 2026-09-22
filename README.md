@@ -11,11 +11,11 @@ persistence — same API, same code.
 📖 **[Visual explainer → morphdb.pages.dev](https://morphdb.pages.dev)** — the whole idea (schema-fluid, API-stable), the agent/frontend split, relations, and how Claude plugs in through the `morphdb` CLI, on one page.
 
 🧭 **Design specs** (hosted on GitHub Pages, with inline text-anchored comments — highlight any line to weigh in):
-- **[The Gaps →](https://savcab.github.io/morphdb/specs/gaps.html)** — what the generic backend can't do yet, found by building the example clones; the prioritized to-do list.
-- **[MorphRules →](https://savcab.github.io/morphdb/specs/permissions.html)** — a design for per-user authorization enforced inside MorphDB.
-- **[morphdb.js →](https://savcab.github.io/morphdb/specs/frontend-sdk.html)** — a Firebase-style frontend SDK served by the backend itself at `GET /sdk.js`; retires the copy-pasted `db()` helper.
-- **[Live queries →](https://savcab.github.io/morphdb/specs/streaming.html)** — streaming over SSE: subscribe to the same query you already run (`GET /stream/{type}`), get whole fresh results or per-object deltas as writes land. Closes gap #5.
-- **[All specs + example apps →](https://savcab.github.io/morphdb/specs/)**
+- **[The Gaps →](https://felixchenyijun.github.io/morphdb/specs/gaps.html)** — what the generic backend can't do yet, found by building the example clones; the prioritized to-do list.
+- **[MorphRules →](https://felixchenyijun.github.io/morphdb/specs/permissions.html)** — a design for per-user authorization enforced inside MorphDB.
+- **[morphdb.js →](https://felixchenyijun.github.io/morphdb/specs/frontend-sdk.html)** — a Firebase-style frontend SDK served by the backend itself at `GET /sdk.js`; retires the copy-pasted `db()` helper.
+- **[Live queries →](https://felixchenyijun.github.io/morphdb/specs/streaming.html)** — streaming over SSE: subscribe to the same query you already run (`GET /stream/{type}`), get whole fresh results or per-object deltas as writes land. Closes gap #5.
+- **[All specs + example apps →](https://felixchenyijun.github.io/morphdb/specs/)**
 
 ## Install
 
@@ -134,12 +134,12 @@ curl -X PUT $BASE/schema/task -H "$H" -d '{"merge":true,"fields":{"due":"datetim
 ```
 
 🎬 **Live demos** (hosted on GitHub Pages, wired to a public cloud MorphDB backend):
-**[gallery →](https://savcab.github.io/morphdb/)** ·
-[todo](https://savcab.github.io/morphdb/todo/) ·
-[LinkedIn](https://savcab.github.io/morphdb/linkedin/) ·
-[Notion](https://savcab.github.io/morphdb/notion/) ·
-[Figma](https://savcab.github.io/morphdb/figma/) ·
-[Linear](https://savcab.github.io/morphdb/linear/)
+**[gallery →](https://felixchenyijun.github.io/morphdb/)** ·
+[todo](https://felixchenyijun.github.io/morphdb/todo/) ·
+[LinkedIn](https://felixchenyijun.github.io/morphdb/linkedin/) ·
+[Notion](https://felixchenyijun.github.io/morphdb/notion/) ·
+[Figma](https://felixchenyijun.github.io/morphdb/figma/) ·
+[Linear](https://felixchenyijun.github.io/morphdb/linear/)
 
 See [`examples/`](examples/) for the source — complete, single-file frontends backed
 by MorphDB. Each ships the `morphdb.schema.json` that defines its data model, so you can
